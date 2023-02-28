@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EJERCICIO14JBSM.MainPage">
+
+    <StackLayout BackgroundColor="White">
+        <Label Text="EJERCICIO 1.4 JBSM" FontSize="Title" TextColor="Blue" HorizontalTextAlignment="Center"/>
+        <Label/>
+        <Image x:Name="Foto" WidthRequest="250"  HeightRequest="300" BackgroundColor="black" />
+        <Label/>
+        <Button x:Name="btnfoto" Text="Agregar foto" Clicked="btnfoto_Clicked" Margin="100,0,100,0" TextColor="Black"/>
+        <Label Text="Nombre:" FontSize="16" TextColor="Black" Margin="5,0,5,0"/>
+        <Entry x:Name="txtnombre" Placeholder="Nombre del archivo" Keyboard="Text" Margin="10,0,10,0" TextColor="Black" FontSize="16" />
+        <Label Text="Descripcion:" FontSize="16" TextColor="Black" Margin="5,0,5,0"/>
+        <Entry x:Name="txtdescripcion" Placeholder="Descripcion" Keyboard="Text" Margin="10,0,10,0" TextColor="Black" FontSize="16"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="btnlista" Text="Ver Registros" Clicked="btnlista_Clicked" Margin="10,0,10,0" TextColor="Black"/>
+            <Button x:Name="btnagregar" Text="Guardar Registro" Clicked="btnagregar_Clicked" Margin="10,0,10,0" TextColor="Black"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
